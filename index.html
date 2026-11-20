@@ -545,7 +545,7 @@
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                         <div>
                             <label class="text-cyan font-bold" style="font-size: 11px;">ชื่อผู้กำกับ (ตัวคุณ):</label>
-                            <input type="text" id="setup-director-name" value="มิ่งภพ ศรีชะบา" class="cm-input font-bold text-gold">
+                            <input type="text" id="setup-director-name" value="พิมพ์ชื่อผู้กำกับของคุณ" class="cm-input font-bold text-gold">
                         </div>
                         <div>
                             <label class="text-cyan font-bold" style="font-size: 11px;">ชื่อสตูดิโอภาพยนตร์ของคุณ:</label>
@@ -1287,8 +1287,8 @@
 
         function startNewStudioCareer() {
             SoundFX.playClick();
-            const dirName = document.getElementById('setup-director-name').value.trim() || 'มิ่งภพ ศรีชะบา';
-            const stdName = document.getElementById('setup-studio-name').value.trim() || 'Lanna Auteur Pictures';
+            const dirName = document.getElementById('setup-director-name').value.trim() || 'ระบุ';
+            const stdName = document.getElementById('setup-studio-name').value.trim() || 'ระบุ';
 
             const talents = JSON.parse(JSON.stringify(REAL_TALENTS_DB)).map(t => ({
                 ...t,
